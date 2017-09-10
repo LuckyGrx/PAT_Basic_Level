@@ -1,33 +1,37 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <set>
 using namespace std;
 
+void findFriend(int& val,set<int> &iset){
+	int sum=0;
+	while(val){
+		sum+=val%10;
+		val/=10;
+	}
+	iset.insert(sum);
+}
+
 int main() {
-	int number;
-	cin >> number;
-	int array[37] = { 0 };//
-	for (int i = 0; i < number; i++) {
-		string a;
-		cin >> a;
-		int b = 0;
-		for (int j = 0; j < a.size(); j++) {
-			int d = a[j] - '0';
-			b += d;
+	int N;
+	set<int> iset;
+	while(cin>>N){
+		iset.clear();
+		int val;
+		for(int idx=0;idx<N;++idx){
+			cin>>val;
+			findFriend(val,iset);
 		}
-		array[b] = 1;
-	}
-	int mark=0;
-	for (int i = 1; i < 37; i++) {
-		if (array[i] != 0)
-			mark++;
-	}
-	cout << mark << endl;
-	string c="";
-	for (int i = 1; i < 37; i++) {
-		if (array[i] != 0) {
-			c += to_string(i)+" ";
+		cout<<iset.size()<<endl;
+		bool isFirst=true;
+		for(const auto& elem:iset){
+			if(isFirst){
+				cout<<elem;
+				isFirst=false;
+			}else{
+				cout<<" "<<elem;
+			}
 		}
+		cout<<endl;
 	}
-	cout << c.substr(0, c.size()-1);
 	return 0;
 }
