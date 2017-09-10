@@ -5,7 +5,7 @@ int main()
 {
 	int N,M;
 	cin >> N >> M;
-	int* array=new int[N*2];//璁剧疆鎴愪袱鍊嶉暱锛屼究浜庝竴閬嶉亶鍘嗗嚭鎵�闇�寰幆鍙崇Щ鏁版嵁
+	int* array=new int[N*2];//设置成两倍长，便于一遍遍历出所需循环右移数据
 	for (int i = 0; i < N; i++) {
 		int temp;
 		cin >> temp;
@@ -19,4 +19,5 @@ int main()
 	}
 	cout << endl;
 	return 0;
+	
 }

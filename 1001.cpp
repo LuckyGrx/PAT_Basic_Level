@@ -8,9 +8,9 @@ int main()
 	int count = 0;
 	while(n!=1)
 	{
-		if(n%2==0)//even
+		if(n%2==0)//Å¼Êı
 			n=n/2;
-		else//odd
+		else//ÆæÊı
 			n=(3*n+1)/2;
 		count++;
 	}

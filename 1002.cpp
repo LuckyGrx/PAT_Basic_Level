@@ -2,7 +2,7 @@
 #include<string>
 #include<sstream>
 using namespace std;
-string hashArray[10] = { "ling","yi","er","san","si","wu","liu","qi","ba","jiu" };
+string mark[10] = { "ling","yi","er","san","si","wu","liu","qi","ba","jiu" };
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
 	ss.clear();
 	int length = sumString.size();
 	for (int i = 0; i < length; i++) {
-		cout << hashArray[sumString[i] - '0'];
+		cout << mark[sumString[i] - '0'];
 		if (i != length - 1)
 			cout << " ";
 	}

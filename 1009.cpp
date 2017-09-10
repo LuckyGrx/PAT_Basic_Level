@@ -6,7 +6,7 @@ int main()
 {
 	string str;
 	getline(cin,str);
-	int i = str.size() - 1;//åˆ©ç”¨ä¸¤ä¸ªä¸‹æ ‡æŒ‡é’ˆåŒºåˆ†å‡ºå„ä¸ªå•è¯
+	int i = str.size() - 1;//ÀûÓÃÁ½¸öÏÂ±êÖ¸ÕëÇø·Ö³ö¸÷¸öµ¥´Ê
 	int j = i;
 	while (i >= 0) {
 		while (i >= 0 && str[i] != ' ')

@@ -7,7 +7,7 @@ struct studentInfo {
 	int score;
 };
 
-int main() {//时间复杂度O(n)  空间复杂度O(1)
+int main() {//ʱ�临�Ӷ�O(n)  �ռ临�Ӷ�O(1)
 	int n;
 	cin >> n;
 	studentInfo minStudentInfo, maxStudentInfo;

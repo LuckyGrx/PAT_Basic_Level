@@ -3,9 +3,9 @@
 using namespace std;
 const int Max=100000;
 bool indexArray[Max];
-int primeArray[Max];//ç´ æ•°æ•°ç»„
+int primeArray[Max];//ËØÊıÊı×é
 
-void init() {//ç­›æ•°æ³• åˆå§‹åŒ–
+void init() {//É¸Êı·¨ ³õÊ¼»¯
 	indexArray[1] = false;
 	indexArray[2] = true;
 	for (int i = 3; i < Max; i++)

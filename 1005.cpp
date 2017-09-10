@@ -9,9 +9,9 @@ map<int, bool> m;
 void find(int n) {
 	while (n != 1)
 	{
-		if (n % 2 == 0)//å¶æ•°
+		if (n % 2 == 0)//Å¼Êı
 			n = n / 2;
-		else//å¥‡æ•°
+		else//ÆæÊı
 			n = (3 * n + 1) / 2;
 		if (m.count(n) > 0)
 			return;

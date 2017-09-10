@@ -5,9 +5,9 @@ int main()
 {
 	int n;
 	cin>>n;
-	int ge=n%10;//涓綅
-	int shi=(n/10)%10;//鍗佷綅
-	int bai=n/100;//鐧句綅
+	int ge=n%10;//个位
+	int shi=(n/10)%10;//十位
+	int bai=n/100;//百位
 
 	for(int i=0;i<bai;i++)
 		cout<<"B";
