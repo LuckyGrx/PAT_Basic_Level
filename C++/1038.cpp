@@ -9,18 +9,16 @@ int main()
 	for(int i=0;i<N;i++)
 	{
 		scanf("%d",&mark);
-		score[mark]++;
+		++score[mark];
 	}
 	int K;
 	scanf("%d",&K);
-	for(int i=0;i<K-1;i++)
+	for(int i=0;i<K;i++)
 	{
 		scanf("%d",&mark);
 		printf("%d",score[mark]);
-		printf(" ");
+		if(i!=K-1)
+			printf(" ");
 	}
-	scanf("%d",&mark);
-	printf("%d",score[mark]);
-
 	return 0;
 }
